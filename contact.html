@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="lib/bootstrap-5.1.0-dist\bootstrap-5.1.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="mb-3"></div>
+    <div class="container mb-3">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+
+                <form class="row align-items-center">
+                    <div class="col-sm">
+                        <h4>Időjárás</h4>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                        <select class="form-select" id="autoSizingSelect" name="autoSizingSelect">
+
+                            <option value="0">Hétfő</option>
+                            <option value="1">Kedd</option>
+                            <option value="2">Szerda</option>
+                            <option value="3">Csütörtök</option>
+                            <option value="4">Péntek</option>
+                            <option value="5">Szombat</option>
+                            <option value="6">Vasárnap</option>
+
+                        </select>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <span class="show-degrees">0</span>°C
+
+                    </div>
+
+                    <div class="col-sm">
+                        <button onclick="weatherWidget()" type="button" class="btn btn-primary">Hőmérséklet</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="col-3"></div>
+
+        </div>
+
+    </div>
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="alert alert-primary" role="alert">
+                    Kérem, olvassa el a feltételeket!
+                </div>
+                <div class="alert alert-secondary" role="alert">
+                    A vonatok innen indulnak.
+                </div>
+                <div class="alert alert-success" role="alert">
+                    Sikeres regisztráció!
+                </div>
+                <div class="alert alert-danger" role="alert">
+                    A rendszer meghibásodott!
+                </div>
+                <div class="alert alert-warning" role="alert">
+                    Lehet, hogy nem minden adat elérhető.
+                </div>
+                <div class="alert alert-info" role="alert">
+                    A simple info alert—check it out!
+                </div>
+                <div class="alert alert-light" role="alert">
+                    A rendszer megfelelően működik.
+                </div>
+                <div class="alert alert-dark" role="alert">
+                    The Dark Knight.
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>

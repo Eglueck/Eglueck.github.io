@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="lib/bootstrap-5.1.0-dist\bootstrap-5.1.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>About</title>
+</head>
+
+<body>
+    <div class="mb-3"></div>
+    <div class="container mb-3">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+
+                <form class="row align-items-center">
+                    <div class="col-sm">
+                        <h4>Időjárás</h4>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                        <select class="form-select" id="autoSizingSelect" name="autoSizingSelect">
+
+                            <option value="0">Hétfő</option>
+                            <option value="1">Kedd</option>
+                            <option value="2">Szerda</option>
+                            <option value="3">Csütörtök</option>
+                            <option value="4">Péntek</option>
+                            <option value="5">Szombat</option>
+                            <option value="6">Vasárnap</option>
+
+                        </select>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <span class="show-degrees">0</span>°C
+
+                    </div>
+
+                    <div class="col-sm">
+                        <button onclick="weatherWidget()" type="button" class="btn btn-primary">Hőmérséklet</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="col-3"></div>
+
+        </div>
+
+    </div>
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <form class="form-horizontal">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>
